@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<HTML class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fb.WeUI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- lib styles -->
+        <link rel="stylesheet" type="text/css" href="libs/weui/dist/style/weui.min.css">
+        
+        <!-- lib scripts -->
+        <script type="text/javascript" src="libs/angular-material/angular-material.min.js"></script>
+        <script type="text/javascript" src="libs/restangular/dist/restangular.min.js"></script>
+        <script type="text/javascript" src="libs/lodash/dist/lodash.min.js"></script>
+        <script type="text/javascript" src="libs/oclazyload/dist/ocLazyLoad.min.js"></script>
+        <script type="text/javascript" src="libs/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="libs/moment/locale/zh-cn.js"></script>
+        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        
+        <!-- app scripts 打包时候混淆合并 -->
+        <script type="text/javascript" src="scripts/config/public.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/config/app.filter.js"></script>
+        <script type="text/javascript" src="scripts/config/app.directive.js"></script>
+        <script type="text/javascript" src="scripts/config/app.interceptor.js"></script>
+        <script type="text/javascript" src="scripts/config/app.route.js"></script>
+        <script type="text/javascript" src="scripts/config/app.startup.js"></script>
+        <script type="text/javascript" src="scripts/service/dbserver.js"></script>
+        <script type="text/javascript" src="scripts/service/ui-load.js"></script>
+        <script type="text/javascript" src="scripts/component/fb.weui.js"></script>
+        
+        <script type="text/javascript" src="scripts/controller/job/post.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/detail.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/pay.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/apply.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/apply.detail.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/apply.list.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/rate.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/search.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/my.post.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/my.apply.controller.js"></script>
+        <script type="text/javascript" src="scripts/controller/job/my.favour.controller.js"></script>
+    </head>
+    
+    <body ng-app="App" ng-strict-di="">
+        <ion-nav-bar ng-class="headerBarCls"
+	        animation="nav-title-slide-ios7">
+	    </ion-nav-bar>
+	    <ion-nav-view animaton="slide-left-right-ios7"></ion-nav-view>
+        
+        <!-- WeUI Toast -->
+        <weui-toast></weui-toast>
+        <weui-loading-toast></weui-loading-toast>
+        <!-- WeUI Dialog -->
+        <weui-dialog></weui-dialog>
+        <!-- WeUI Actionsheet -->
+        <weui-actionsheet></weui-actionsheet>
+        
+	</body>
+
+</HTML>
