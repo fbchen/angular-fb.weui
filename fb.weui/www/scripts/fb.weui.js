@@ -52,7 +52,7 @@
                 $rootScope.$emit('weui.loading.toast.show', {msg: msg, autoHide: autoHide});
             }
             
-            // 显示loading toast ()
+            // 显示loading toast (on saving)
             this.showSavingToast = function(msg, autoHide) {
                 $rootScope.$emit('weui.loading.toast.show', {
                     msg: msg || weuiConfig.savingToastMsg, autoHide: autoHide
