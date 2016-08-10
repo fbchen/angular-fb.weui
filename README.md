@@ -25,6 +25,10 @@ WeUI组件的angular实现
 
 调用方法：
 ```javascript
+    angular.module('App', [
+        'fb.weui'
+    ])
+    
     .controller('YourCtrl', ['$scope', '$timeout', '$window', '$weui', function($scope, $timeout, $window, $weui) {
         
         $scope.showToast = function() {
